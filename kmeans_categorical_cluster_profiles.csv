@@ -1,0 +1,9 @@
+cluster,cat2,forg,center,mode
+0,avionicsmonitoring,g,_5,semidetached
+1,monitor_control,g,_2,semidetached
+2,avionicsmonitoring,g,_2,semidetached
+3,Avionics,f,_5,embedded
+4,realdataprocessing,g,_2,semidetached
+5,Avionics,f,_2,embedded
+6,operatingsystem,g,_6,semidetached
+7,missionplanning,g,_5,embedded

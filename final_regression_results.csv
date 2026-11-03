@@ -1,0 +1,3 @@
+Model,MAE,R2
+Baseline,541.214547,
+Gradient Boosting,268.080508,0.524
