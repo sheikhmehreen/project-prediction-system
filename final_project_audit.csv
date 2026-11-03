@@ -1,9 +1,0 @@
-Check,Status,Details
-Four outer folds for all models,PASS,"{'Logistic Regression': 4, 'Random Forest': 4, 'Gradient Boosting': 4}"
-Dummy has four folds,PASS,Dummy folds: 4
-Nested model and dummy fold counts match,PASS,Matching counts do not independently prove identical split indices.
-Nested classification results available,PASS,Models found: 3
-Classification scores are within valid range,PASS,All metrics checked against the 0–1 range.
-Best nested classifier identified,PASS,Best model: Gradient Boosting
-Historical classification comparison agrees with nested CV,REVIEW,Historical F1: 0.7619; Nested CV F1: 0.6216. Keep evaluation procedures separate.
-Classification fold variability assessed,PASS,Best model F1 standard deviation: 0.2184
