@@ -1,3 +1,0 @@
-Task,Baseline,Best Model,Baseline MAE,Best MAE,MAE Improvement (%),Baseline F1,Best F1
-Regression,Baseline,Gradient Boosting,541.2145466393309,268.08050784154284,50.46686946864466,,
-Classification,Dummy Classifier,Logistic Regression,,,,0.4768194768194768,0.7619047619047619
