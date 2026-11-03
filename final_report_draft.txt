@@ -1,0 +1,140 @@
+
+======================================================================
+CLASSIFICATION RESULTS
+======================================================================
+              Model  ACCURACY  PRECISION   RECALL       F1  ROC_AUC   F1 Std
+  Gradient Boosting  0.633975   0.659091 0.664583 0.621621 0.700267 0.218360
+      Random Forest  0.601080   0.581818 0.695833 0.603103 0.581662 0.210471
+Logistic Regression  0.519236   0.578431 0.670098 0.559201 0.668928 0.146357
+     Dummy Baseline  0.420481   0.355263 0.750000 0.476819 0.500000 0.287652
+
+======================================================================
+REGRESSION RESULTS
+======================================================================
+            Model        MAE    R2
+         Baseline 541.214547   NaN
+Gradient Boosting 268.080508 0.524
+
+======================================================================
+REGRESSION INTERPRETATION
+======================================================================
+
+### Regression model interpretation
+
+Gradient Boosting achieved the lowest reported MAE of
+268.08, compared with 541.21 for the baseline model.
+
+This represents a reduction in MAE of
+50.47%.
+
+The reported R-squared value of 0.524 indicates that the
+model explains approximately 52.4% of the variation in
+the target variable.
+
+The model therefore provides a meaningful improvement
+over the baseline, although prediction errors remain.
+
+
+======================================================================
+CLASSIFICATION INTERPRETATION
+======================================================================
+
+### Classification model interpretation
+
+Gradient Boosting achieved the strongest performance in the
+nested cross-validation experiment, with a mean F1-score of
+0.622 and ROC-AUC of 0.700.
+
+Its F1-score exceeded the dummy baseline by
+0.145 points.
+
+This suggests that the model learned useful patterns from
+the available features. However, the results varied between
+validation folds, indicating uncertainty in performance
+estimates.
+
+The ROC-AUC indicates moderate ranking ability, rather than
+perfect separation between the two classes.
+
+
+======================================================================
+DISCUSSION AND LIMITATIONS
+======================================================================
+
+### Discussion
+
+The regression experiments indicate that Gradient Boosting
+provides the strongest reported predictive performance.
+Its reduction in MAE compared with the baseline suggests
+that the engineered features contain useful predictive
+information.
+
+For classification, nested cross-validation identifies
+Gradient Boosting as the strongest model based on mean
+F1-score and ROC-AUC. The Random Forest and Logistic
+Regression models also provide useful predictive results.
+
+The clustering experiment identified eight clusters.
+The clustering results should be interpreted as exploratory
+groups rather than confirmed natural categories. The
+explained variance of the PCA representation was
+approximately 36.90%, indicating that the two-dimensional
+representation does not capture all information.
+
+### Limitations
+
+1. The dataset contains only 93 observations, limiting
+   the reliability and generalisability of conclusions.
+
+2. Classification metrics show considerable variation
+   between validation folds.
+
+3. The small test set makes individual test metrics
+   sensitive to a small number of observations.
+
+4. Clustering results depend on feature selection,
+   preprocessing and the selected number of clusters.
+
+5. Model performance on unseen external data has not
+   been established.
+
+6. The regression and classification results should not
+   be interpreted as proof of causal relationships.
+
+7. The nested CV and other classification comparisons
+   represent different evaluation procedures and should
+   be reported separately.
+
+
+======================================================================
+CONCLUSION
+======================================================================
+
+### Conclusion
+
+This project applied regression, classification and
+unsupervised clustering techniques to investigate patterns
+within the prepared dataset.
+
+Gradient Boosting was the strongest regression model,
+achieving an MAE of 268.08 and an R-squared value of 0.524.
+It reduced the baseline MAE by approximately
+50.47%.
+
+For classification, Gradient Boosting achieved the best
+nested cross-validation results, with an F1-score of
+0.622 and ROC-AUC of
+0.700. Its performance exceeded the
+dummy baseline in mean F1-score.
+
+KMeans clustering identified eight groups within the data,
+providing an exploratory view of similarities between
+observations.
+
+Overall, the experiments demonstrate the potential of
+machine learning for regression, classification and
+pattern discovery in this dataset. However, the relatively
+small sample size and variability in validation results
+mean that further validation on larger independent datasets
+would be necessary before practical deployment.
+

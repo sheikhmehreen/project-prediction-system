@@ -1,0 +1,4 @@
+Model,Best F1
+Logistic Regression,0.6229934894408578
+Random Forest,0.649185641998735
+Gradient Boosting,0.5995624745624746

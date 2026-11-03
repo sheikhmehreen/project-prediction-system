@@ -1,0 +1,15 @@
+{
+    "selected_model": "Gradient Boosting",
+    "best_parameters": {
+        "model__learning_rate": 0.03,
+        "model__max_depth": 1,
+        "model__min_samples_leaf": 2,
+        "model__n_estimators": 50
+    },
+    "best_grouped_cv_f1": 0.7276898207578567,
+    "number_of_project_groups": 8,
+    "inner_cv": "GroupKFold",
+    "inner_splits": 3,
+    "random_state": 42,
+    "training_rows": 93
+}

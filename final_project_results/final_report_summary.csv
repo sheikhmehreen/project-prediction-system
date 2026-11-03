@@ -1,0 +1,3 @@
+Task,Best Model,Primary Metric,Best Score,R2
+Regression,Gradient Boosting,MAE,268.08050784154284,0.5236537204304611
+Classification,Logistic Regression,F1,0.7619047619047619,
